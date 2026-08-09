@@ -22,7 +22,18 @@
       <link href="./files/lightbox.min.css" rel="stylesheet">
       <link href="./files/bootstrap-icons.css" rel="stylesheet">
       <!-- Main stylesheet: preload to avoid render-blocking -->
-      <link rel="preload" href="./files/style.css" as="style" onload="this.rel='stylesheet'">
+         <link rel="preload" href="./files/style.css" as="style" onload="this.rel='stylesheet'">
+         <!-- Preload hero / above-the-fold images (AVIF optimized) -->
+         <link rel="preload" href="./files/optimized/about-1.avif" as="image" type="image/avif">
+         <link rel="preload" href="./files/optimized/about-2.avif" as="image" type="image/avif">
+         <!-- Inline critical hero CSS to speed first paint -->
+         <style>
+            /* Critical styles for above-the-fold */
+            html,body{margin:0}
+            #home{background:linear-gradient(180deg, rgba(14,165,164,0.04), rgba(255,107,107,0.02));padding-top:3rem;padding-bottom:3rem}
+            .brand-mark{width:84px;height:84px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+            .display-3{font-size:48px;font-weight:700}
+         </style>
       <noscript><link href="./files/style.css" rel="stylesheet"></noscript>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    </head>
@@ -104,10 +115,10 @@
                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                   <div class="row g-3 mb-4">
                      <div class="col-sm-6">
-                        <img class="img-fluid rounded" src="./files/about-1.png" alt="">
+                        <img class="img-fluid rounded" src="./files/about-1.png" alt="" width="500" height="490">
                      </div>
                      <div class="col-sm-6">
-                        <img class="img-fluid rounded" src="./files/about-2.jpg" alt="">
+                        <img class="img-fluid rounded" src="./files/about-2.jpg" alt="" width="2467" height="1852">
                      </div>
                   </div>
                   <div class="d-flex align-items-center mb-3">

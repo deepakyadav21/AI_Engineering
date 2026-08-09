@@ -61,7 +61,11 @@
                <!-- Project 1 -->
                <div class="col-lg-4 col-md-6 portfolio-item first">
                   <div class="portfolio-img rounded overflow-hidden">
-                     <img class="img-fluid" src="./files/biba.jpeg" alt="Project biba">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/biba.avif">
+                        <source type="image/webp" srcset="./files/optimized/biba.webp">
+                        <img class="img-fluid" src="./files/biba.jpeg" alt="Project biba">
+                     </picture>
                      <div class="portfolio-btn">
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/biba.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
                         <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#biba"><i class="fa fa-eye"></i></button>

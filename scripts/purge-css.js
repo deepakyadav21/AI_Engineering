@@ -1,9 +1,10 @@
 const { PurgeCSS } = require('purgecss');
 const fs = require('fs');
-const critical = require('critical');
 
 (async () => {
   try {
+    const critical = await import('critical');
+
     console.log('Running PurgeCSS...');
     const purgeResult = await new PurgeCSS().purge({
       content: ['index.html', 'about.html', 'projects.html', 'contact.html'],

@@ -96,14 +96,17 @@
 
 /*** Navbar ***/
 .navbar.fixed-top {
-    display: none;
-    transition: .5s;
+    transition: all .3s ease;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    background-color: rgba(255,255,255,0.98);
+    backdrop-filter: blur(12px);
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 20px 15px;
+    padding: 18px 12px;
     color: var(--dark);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     outline: none;
 }
@@ -137,16 +140,13 @@
 /* Reduce oversized hero headings for a sleeker look */
 .display-3 { font-size: 48px; font-weight:700; }
 
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
+.portfolio-btn .btn i {
+    font-size: 16px;
+}
 
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
-    }
+.btn-close {
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 

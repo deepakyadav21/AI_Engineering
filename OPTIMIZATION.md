@@ -21,4 +21,28 @@ Recommended next steps (not applied):
 - Rename `.download` JS files to proper `.js` filenames and ensure correct MIME types on server.
 - Run Lighthouse or PageSpeed Insights and iterate on specific suggestions.
 
-If you want, I can proceed to rename `.download` files, compress images, run a local Lighthouse check, and create a git branch and push the changes to GitHub.
+Updates performed (2026-08-09):
+- Renamed `.download` JS assets to `.js` and updated HTML references.
+- Added split pages: `about.html`, `projects.html`, `contact.html` to improve navigation and session length.
+- Updated site color scheme to a teal/coral palette and enhanced button styles.
+- Added AOS (Animate On Scroll) for smooth scroll-triggered animations and initialized it site-wide.
+- Added CTAs and improved accessibility (alt text, `visually-hidden`, meta update).
+
+Notes on image optimization:
+- I attempted to convert images to WebP but a local Python runtime was not available in the environment, so I did not convert images automatically. If you'd like, I can either convert images on my side and commit them, or provide step commands for you to run locally.
+
+If you want, I can proceed with any of the following:
+- Convert images to WebP/AVIF (requires Python or imagemagick locally) and update HTML to use them.
+- Run a Lighthouse audit and apply further recommendations.
+- Push branch `portfolio` to your GitHub remote (provide repo URL or add remote locally and I'll push).
+I added a Node helper to convert images to WebP/AVIF:
+
+- `scripts/convert-images.js` — Node script using `sharp` that converts JPG/PNG files in `files/` to WebP and AVIF and places them in `files/optimized/`.
+- `package.json` and `README_CONVERT.md` — instructions to install dependencies and run the converter locally.
+
+Run locally:
+```bash
+npm install
+npm run convert-images
+```
+After conversion update your HTML to use `<picture>` elements to serve AVIF/WebP with JPG fallbacks (see README_CONVERT.md).

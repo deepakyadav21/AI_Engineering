@@ -13,15 +13,12 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
-
-
-    // Navbar on scrolling
+// Navbar shrink on scroll
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.navbar').fadeIn('slow').css('display', 'flex');
+        if ($(this).scrollTop() > 80) {
+            $('.navbar').addClass('shrink shadow-sm');
         } else {
-            $('.navbar').fadeOut('slow').css('display', 'none');
+            $('.navbar').removeClass('shrink shadow-sm');
         }
     });
 
@@ -32,8 +29,8 @@
             event.preventDefault();
             
             $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
+                scrollTop: $(this.hash).offset().top - 80
+            }, 1000, 'easeInOutExpo');
             
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
@@ -58,9 +55,9 @@
     
 
     // Typed Initiate
-    if ($('.typed-text-output').length == 1) {
+    if (window.Typed && $('.typed-text-output').length === 1) {
         var typed_strings = $('.typed-text').text();
-        var typed = new Typed('.typed-text-output', {
+        new Typed('.typed-text-output', {
             strings: typed_strings.split(', '),
             typeSpeed: 100,
             backSpeed: 20,
@@ -70,57 +67,40 @@
     }
 
 
-    // Modal Video
-    var $videoSrc;
-    $('.btn-play').click(function () {
-        $videoSrc = $(this).data("src");
-    });
-    console.log($videoSrc);
-    $('#videoModal').on('shown.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-    })
-    $('#videoModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc);
-    })
-
-
     // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    if ($.fn.counterUp && $('[data-toggle="counter-up"]').length) {
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    }
 
 
     // Skills
-    $('.skill').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+    if ($.fn.waypoint && $('.skill').length) {
+        $('.skill').waypoint(function () {
+            $('.progress .progress-bar').each(function () {
+                $(this).css("width", $(this).attr("aria-valuenow") + '%');
+            });
+        }, {offset: '80%'});
+    }
 
 
     // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
+    if ($.fn.isotope && $('.portfolio-container').length) {
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
+        $('#portfolio-flters li').on('click', function () {
+            $("#portfolio-flters li").removeClass('active');
+            $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
+            portfolioIsotope.isotope({filter: $(this).data('filter')});
+        });
+    }
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: true,
-        loop: true,
-    });
 
-    
 })(jQuery);
 

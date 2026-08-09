@@ -11,7 +11,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="./files/bootstrap.min.css" rel="stylesheet">
       <link href="./files/animate.min.css" rel="stylesheet">
-      <link href="./files/owl.carousel.min.css" rel="stylesheet">
       <link href="./files/lightbox.min.css" rel="stylesheet">
       <link href="./files/bootstrap-icons.css" rel="stylesheet">
       <link rel="preload" href="./files/style.purged.css" as="style" onload="this.rel='stylesheet'">
@@ -19,32 +18,11 @@
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5">
-         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">Deepak</h1>
-         </a>
-         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-               <a href="index.html" class="nav-item nav-link">Home</a>
-               <a href="about.html" class="nav-item nav-link">About</a>
-               <a href="projects.html" class="nav-item nav-link active">Projects</a>
-            </div>
-            <a href="https://www.linkedin.com/in/deepakyadavms/" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-               <h1 class="text-primary fw-bold m-0">Hire Me</h1>
-            </a>
-            <div class="navbar-nav me-auto py-0">
-               <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-         </div>
-      </nav>
 
       <!-- Projects Start -->
       <div class="container-xxl py-6 pt-5" id="project" style="padding-top:100px;" data-aos="fade-up">
          <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 mb-5 align-items-center" data-aos-delay="100">
                <div class="col-lg-6">
                   <h1 class="display-5 mb-0">My Projects</h1>
                </div>
@@ -56,9 +34,7 @@
                   </ul>
                </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s" style="position: relative;">
-               <!-- (Project items retained as in original index) -->
-               <!-- Project 1 -->
+            <div class="row g-4 portfolio-container" data-aos-delay="100" style="position: relative;">
                <div class="col-lg-4 col-md-6 portfolio-item first">
                   <div class="portfolio-img rounded overflow-hidden">
                      <picture>
@@ -72,11 +48,359 @@
                      </div>
                   </div>
                </div>
-               <!-- Modals and remaining projects copied similarly... for brevity the page keeps original project markup -->
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/dmml1pic.avif">
+                        <source type="image/webp" srcset="./files/optimized/dmml1pic.webp">
+                        <img class="img-fluid" src="./files/dmml1pic.jpeg" alt="Project dmml1" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/dmml1pic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#Dmml1"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/dappic.avif">
+                        <source type="image/webp" srcset="./files/optimized/dappic.webp">
+                        <img class="img-fluid" src="./files/dappic.jpeg" alt="Project dappic" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/dappic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#dap"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/statspic.avif">
+                        <source type="image/webp" srcset="./files/optimized/statspic.webp">
+                        <img class="img-fluid" src="./files/statspic.jpeg" alt="Project statspic" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/statspic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#stats"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/msopic1.avif">
+                        <source type="image/webp" srcset="./files/optimized/msopic1.webp">
+                        <img class="img-fluid" src="./files/msopic1.jpeg" alt="Project msopic1" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/msopic1.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#mso1"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/msopic2.avif">
+                        <source type="image/webp" srcset="./files/optimized/msopic2.webp">
+                        <img class="img-fluid" src="./files/msopic2.jpeg" alt="Project msopic2" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/msopic2.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#mso2"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/dmml2pic.avif">
+                        <source type="image/webp" srcset="./files/optimized/dmml2pic.webp">
+                        <img class="img-fluid" src="./files/dmml2pic.jpeg" alt="Project dmml2pic" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/dmml2pic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#dmml2"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/dapapic.avif">
+                        <source type="image/webp" srcset="./files/optimized/dapapic.webp">
+                        <img class="img-fluid" src="./files/dapapic.jpeg" alt="Project dapapic" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/dapapic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#dapa"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item first">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/ButterflyThesis.avif">
+                        <source type="image/webp" srcset="./files/optimized/ButterflyThesis.webp">
+                        <img class="img-fluid" src="./files/ButterflyThesis.jpeg" alt="Project ButterflyThesis" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/ButterflyThesis.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#thesis"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 portfolio-item second">
+                  <div class="portfolio-img rounded overflow-hidden">
+                     <picture>
+                        <source type="image/avif" srcset="./files/optimized/nbapic.avif">
+                        <source type="image/webp" srcset="./files/optimized/nbapic.webp">
+                        <img class="img-fluid" src="./files/nbapic.jpeg" alt="Project nbapic" width="1024" height="1024">
+                     </picture>
+                     <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./files/nbapic.jpeg" data-lightbox="portfolio"><i class="fa fa-image"></i></a>
+                        <button type="button" class="btn btn-lg-square btn-outline-secondary border-2 mx-1" data-bs-toggle="modal" data-bs-target="#NBA"><i class="fa fa-eye"></i></button>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <!-- Projects End -->
+
+      <!-- Modals -->
+      <div class="modal fade" id="biba" tabindex="-1" aria-labelledby="bibaLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="bibaLabel">Achieving Customer Loyalty in Ryanair</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Business Intelligence & Business Analytics</h5>
+                  <p>This project aimed to enhance customer loyalty within Ryanair by implementing CRM-driven strategies. Through extensive data analysis and business intelligence techniques, we identified key areas for improvement in customer satisfaction and engagement.</p>
+                  <p>Technologies used:</p>
+                  <ul>
+                     <li>Salesforce Sales Cloud for customer data management.</li>
+                     <li>PostgreSQL for data storage.</li>
+                     <li>PowerBI for data visualization.</li>
+                  </ul>
+                  <p>Earned a score of 80 for the project.</p>
+                  <p>View our project presentation on YouTube: <a href="https://www.youtube.com/watch?v=FNzuhyRntIs" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my project Report: <a href="./files/biba.pdf">Project Report</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="Dmml1" tabindex="-1" aria-labelledby="Dmml1Label" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="Dmml1Label">Customer Attrition Prediction in Banking Sector</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Data Mining & Machine Learning 1</h5>
+                  <p>Conducted a comparative study of machine learning algorithms for customer attrition prediction in the banking sector. Explored algorithms such as Random Forest, Logistic Regression, Decision Tree, KNN, and SVM to identify the most effective approach for predicting customer churn.</p>
+                  <p>Technologies used:</p>
+                  <ul>
+                     <li>Python for data analysis and model implementation.</li>
+                     <li>Jupyter Notebook for interactive data exploration and analysis.</li>
+                     <li>Scikit-learn for machine learning algorithms.</li>
+                  </ul>
+                  <p>Achieved an outstanding score of 82 for the project.</p>
+                  <p>View my project presentation on YouTube: <a href="https://www.youtube.com/watch?v=bItU_3t_l5Q" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my project Report: <a href="./files/DMML1.pdf">Project Report</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="dap" tabindex="-1" aria-labelledby="dapLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="dapLabel">Global Talent Migration</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Database & Analytics Programming</h5>
+                  <p>Explored global talent migration using LinkedIn and World Bank datasets. Utilized tools like Jupyter Notebook, Python, Dagster, MongoDB, and PostgreSQL to analyze migration patterns, trends, and factors influencing talent movement across the globe.</p>
+                  <p>Technologies used:</p>
+                  <ul>
+                     <li>Jupyter Notebook for data analysis and visualization.</li>
+                     <li>Python for data manipulation and processing.</li>
+                     <li>Dagster for data pipeline orchestration.</li>
+                     <li>MongoDB and PostgreSQL for data storage and querying.</li>
+                  </ul>
+                  <p>View my project presentation on YouTube: <a href="https://www.youtube.com/watch?v=AZ30zHqmgDI" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my project Report: <a href="./files/DAP.pdf">Project Report</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="stats" tabindex="-1" aria-labelledby="statsLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="statsLabel">Statistics for Data Analytics</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Statistics for Data Analytics</h5>
+                  <p>Investigated socio-economic factors influencing cancer mortality in the United States. Conducted multiple linear regression analysis. Also worked on forecasting climate change and diabetes risk using time series and logistic regression analysis.</p>
+                  <p>Technologies used:</p>
+                  <ul>
+                     <li>R for statistical analysis.</li>
+                     <li>Python for data manipulation.</li>
+                     <li>Jupyter Notebook for interactive data exploration.</li>
+                     <li>PostgreSQL for data storage.</li>
+                  </ul>
+                  <p>Received an impressive score of 80 for the project.</p>
+                  <h4>Project Reports:</h4>
+                  <p><a href="./files/statsCA1.pdf" target="_blank">Socio-Economic Factors Influencing Cancer Mortality in the United States</a></p>
+                  <p><a href="./files/statsCA2.pdf" target="_blank">Forecasting Climate Change and Diabetes Risk</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="mso1" tabindex="-1" aria-labelledby="mso1Label" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="mso1Label">Evaluating Delivery Strategies: A Simulation Study for We-Doo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Modelling, Simulation and Optimisation</h5>
+                  <p>This research presents a simulation study evaluating daily parcel delivery strategies for the 'We-Doo' delivery service company. The customer location data used in this study was generated based on the last four digits of the student identification number, resulting in a map with 100 customer locations.</p>
+                  <p>The simulation covers a period of 50 days of delivery to analyze the effectiveness of the proposed strategies. The study employed various algorithms, including the Floyd-Warshall algorithm, to optimize delivery routes and maximize delivery process efficiency.</p>
+                  <p>Using a discrete-event simulation approach, the simulation models evening parcel delivery in a selected commuter township. Key factors include parcel distribution, route planning, driving times, customer response times, and cargo bike capacity.</p>
+                  <h4>Project Report:</h4>
+                  <p><a href="./files/msoca1.pdf" target="_blank">Evaluating Delivery Strategies: A Simulation Study for We-Doo</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="mso2" tabindex="-1" aria-labelledby="mso2Label" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="mso2Label">Addressing Routing Challenges Through Genetic Algorithms</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Modelling, Simulation and Optimisation</h5>
+                  <p>This research deeply investigates the progression of applying genetic algorithms (GA) to optimize routing challenges. It explores the evolution of GA optimization from the traveling salesman problem to hybrid multi-objective routing, highlighting efficiency, sustainability, and innovation in logistics and transportation.</p>
+                  <h4>Project Report:</h4>
+                  <p><a href="./files/msoca2.pdf" target="_blank">Addressing Routing Challenges Through Genetic Algorithms</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="dmml2" tabindex="-1" aria-labelledby="dmml2Label" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="dmml2Label">Deep Learning Approach for Image-based American Sign Language Recognition</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Data Mining & Machine Learning 2</h5>
+                  <p>Developed a deep learning approach for image-based American Sign Language recognition, achieving 98% accuracy in classifying ASL signs.</p>
+                  <p>Emphasized the importance of preprocessing for accurate ASL recognition.</p>
+                  <p>View my project presentation on YouTube: <a href="https://www.youtube.com/watch?v=TpyvIKE8RHI" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my project Report: <a href="./files/DMML2.pdf" target="_blank">Project Report</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="dapa" tabindex="-1" aria-labelledby="dapaLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="dapaLabel">Sentiment Analysis in Drug Reviews using Machine Learning and Deep Learning Techniques</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Domain Application of Predictive Analytics</h5>
+                  <p>The rapid growth of social media and user feedback sites has produced a wealth of medicine reviews. These reviews provide valuable insights for healthcare practitioners, pharmaceutical businesses, and regulators.</p>
+                  <p>Hypothesis: Advanced NLP techniques can accurately predict sentiment polarity in medication reviews, linking sentiment strength to reported side effects and treatment effectiveness.</p>
+                  <p>Tools Used: NLP techniques, Python, TensorFlow, scikit-learn, and Keras.</p>
+                  <p>Report link: <a href="./files/DAPA.pdf" target="_blank">Project Report</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="thesis" tabindex="-1" aria-labelledby="thesisLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="thesisLabel">Butterfly and Moth Species Detection and Classification Using Deep Learning</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Module Name: Research Project</h5>
+                  <p>This research focuses on classifying butterflies and moths across 100 species using a dataset of 12,594 training images.</p>
+                  <p>Models included EfficientNetB0, ResNet50, VGG19, and a custom CNN named ButterflyNet. ResNet50 achieved 95% test accuracy.</p>
+                  <p>View my project presentation on YouTube: <a href="https://www.youtube.com/watch?v=LgJyTVtHetQ" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my code presentation on YouTube: <a href="https://www.youtube.com/watch?v=8Z2ooe83hRE" target="_blank" rel="noreferrer noopener">Open presentation</a>.</p>
+                  <p>View my project Report: <a href="./files/thesis_report.pdf" target="_blank">Report file</a></p>
+                  <p>View my configuration Report: <a href="./files/configfile.pdf" target="_blank">Configuration file</a></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="NBA" tabindex="-1" aria-labelledby="NBALabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="NBALabel">Project Name: Next Best Action</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h5>Client Name: Morgan Stanley, USA (September 2017 - May 2021)</h5>
+                  <ul>
+                     <li>Collaborated under Agile and Scrum frameworks for Salesforce Sales Cloud testing.</li>
+                     <li>Developed and documented test cases and scenarios for Salesforce Sales Cloud platform.</li>
+                     <li>Managed quality assurance metrics and processes to achieve product release goals.</li>
+                     <li>Led and mentored 6 QA team members and managed external contract testers.</li>
+                     <li>Executed functional, regression, and black-box testing with Selenium WebDriver and Gherkin.</li>
+                  </ul>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- Footer -->
       <div class="container-fluid bg-dark text-white py-4">
@@ -89,11 +413,24 @@
                   Designed By <a class="border-bottom text-secondary" href="https://www.linkedin.com/in/deepakyadavms/">Deepak Yadav</a>
                </div>
             </div>
+            <div class="row mt-3">
+               <div class="col-12 text-center">
+                  <nav class="footer-nav">
+                     <a class="text-white px-2" href="index.html">Home</a> ·
+                     <a class="text-white px-2" href="about.html">About</a> ·
+                     <a class="text-white px-2" href="projects.html">Projects</a> ·
+                     <a class="text-white px-2" href="contact.html">Contact</a>
+                  </nav>
+               </div>
+            </div>
          </div>
       </div>
 
       <script src="./files/jquery-3.4.1.min.js" defer></script>
       <script src="./files/bootstrap.bundle.min.js" defer></script>
+      <script src="./files/easing.min.js" defer></script>
+      <script src="./files/isotope.pkgd.min.js" defer></script>
+      <script src="./files/lightbox.min.js" defer></script>
       <script src="./files/main.js" defer></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
       <script>

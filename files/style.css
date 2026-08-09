@@ -47,6 +47,18 @@
     transition: .5s;
 }
 
+/* Enhanced button styles for modern look */
+.btn-primary{
+    background: linear-gradient(90deg,var(--primary), #0bb6b4);
+    border: none;
+    box-shadow: 0 6px 18px rgba(14,165,164,0.15);
+}
+.btn-outline-secondary{
+    border-color: rgba(11,18,32,0.08);
+    color: var(--dark);
+}
+.btn:hover{ transform: translateY(-3px); box-shadow: 0 10px 25px rgba(11,18,32,0.08); }
+
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
@@ -284,7 +296,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 68, 197, .9);
+    background: linear-gradient(180deg, rgba(14,165,164,0.92) 0%, rgba(255,107,107,0.85) 100%);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -298,6 +310,10 @@
     opacity: 1;
     padding-bottom: 30px !important;
 }
+
+/* smooth image hover */
+.portfolio-img img{ transition: transform .6s ease, filter .4s ease; }
+.portfolio-item:hover .portfolio-img img{ transform: scale(1.05); filter: saturate(1.05); }
 
 
 /*** Team ***/

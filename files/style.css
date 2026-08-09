@@ -20,9 +20,24 @@
     margin-bottom: 6rem;
 }
 
+/* Brand mark for hero */
+.brand-mark{
+    width:84px;
+    height:84px;
+    border-radius:50%;
+    background: linear-gradient(135deg,var(--primary),var(--secondary));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-weight:700;
+    font-size:28px;
+    box-shadow:0 8px 30px rgba(14,165,164,0.12);
+}
+
 .py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -118,15 +133,20 @@
 
 /*** Header ***/
 #home {
-    margin-bottom: 6rem;
-    background: url(background.jpg) left top no-repeat;
-    background-size: cover; /* or background-size: contain; */
+    margin-bottom: 3rem;
+    background: linear-gradient(180deg, rgba(14,165,164,0.04), rgba(255,107,107,0.02));
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .typed-cursor {
-    font-size: 30px;
+    font-size: 20px;
     color: var(--dark);
 }
+
+/* Reduce oversized hero headings for a sleeker look */
+.display-3 { font-size: 48px; font-weight:700; }
 
 .btn-play {
     position: relative;

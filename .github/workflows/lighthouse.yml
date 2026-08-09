@@ -1,0 +1,36 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [ portfolio ]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install http-server and Lighthouse
+        run: |
+          npm install -g http-server lighthouse
+
+      - name: Start static server
+        run: |
+          nohup http-server . -p 8080 >/tmp/http-server.log 2>&1 &
+          sleep 2
+
+      - name: Run Lighthouse
+        run: |
+          lighthouse http://127.0.0.1:8080 --output html --output-path ./lighthouse-report.html --chrome-flags="--headless"
+
+      - name: Upload Lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: lighthouse-report.html

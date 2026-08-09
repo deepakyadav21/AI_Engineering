@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Helper scripts to optimize portfolio assets (image conversion)",
   "scripts": {
-    "convert-images": "node scripts/convert-images.js"
+    "convert-images": "node scripts/convert-images.js",
+    "purge-css": "node scripts/purge-css.js"
   },
   "dependencies": {
     "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "critical": "^8.0.0",
+    "purgecss": "^8.0.0"
   }
 }

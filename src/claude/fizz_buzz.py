@@ -16,3 +16,5 @@ if not input_number.isdigit():
     print("Please enter a valid number.")
 else:
     fizz_buzz(int(input_number))
+
+    
